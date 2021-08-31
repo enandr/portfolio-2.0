@@ -1,0 +1,56 @@
+{
+  "production": [
+    {
+      "name": "Encore Global",
+      "image": "./",
+      "mainDescription": "something",
+      "contributionsDescription": "something",
+      "technologies": [
+        "techa",
+        "techb"
+      ]
+    },
+    {
+      "name": "Ng-Nistx",
+      "image": "./",
+      "mainDescription": "something",
+      "contributionsDescription": "something",
+      "technologies": [
+        "techa",
+        "techb"
+      ]
+    },
+    {
+      "name": "Aisessor",
+      "image": "./",
+      "mainDescription": "something",
+      "contributionsDescription": "something",
+      "technologies": [
+        "techa",
+        "techb"
+      ]
+    },
+    {
+      "name": "DQE Calculator",
+      "image": "./",
+      "mainDescription": "something",
+      "contributionsDescription": "something",
+      "technologies": [
+        "techa",
+        "techb"
+      ]
+    }
+  ],
+  "personal": [
+    {
+      "name": "MedTracker",
+      "image": "./",
+      "mainDescription": "something",
+      "contributionsDescription": "something",
+      "technologies": [
+        "techa",
+        "techb"
+      ]
+    }
+  ]
+}

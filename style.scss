@@ -1,0 +1,277 @@
+$main-theme          : #6B1BED;
+$main-theme-darker   : #2d046f;
+$main-theme-grey     : #1D242E;
+$complimentary-theme : #ed1b9c;
+$complimentary-theme2: #262933;
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #1d242e rgba(0, 0, 0, 0);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1d242e;
+  border-radius   : 10px;
+  border          : 3px solid #ffffff;
+}
+
+@font-face {
+  font-family: JosefinSans;
+  src        : url('./assets/fonts/JosefinSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: OpenSansCondensed;
+  src        : url('./assets/fonts/OpenSansCondensed-Light.ttf');
+}
+
+@font-face {
+  font-family: Abel;
+  src        : url('./assets/fonts/Abel-Regular.ttf');
+}
+
+@font-face {
+  font-family: Exo;
+  src        : url('./assets/fonts/Exo-Light.ttf');
+}
+
+@font-face {
+  font-family: Exo-Italic;
+  src        : url('./assets/fonts/Exo-Italic.ttf');
+}
+
+body {
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .font-js {
+    font-family: JosefinSans;
+  }
+
+  .font-osc {
+    font-family: OpenSansCondensed;
+  }
+
+  .font-abel {
+    font-family: Abel;
+  }
+
+  .font-exo {
+    font-family: Exo;
+  }
+
+  .font-exo-italic {
+    font-family: Exo-Italic;
+    font-style : italic;
+    color      : $complimentary-theme2;
+  }
+}
+
+.background-skills {
+  background-color: $complimentary-theme2;
+}
+
+section {
+  min-height: 101vh;
+
+  &#header-section {
+    margin-bottom: -22%;
+
+    @media only screen and (max-width: 1000px) {
+      margin-bottom: -50%;
+    }
+
+    .welcome {
+      position : absolute;
+      top      : 50%;
+      left     : 50%;
+      transform: translate(-50%, -50%);
+      color    : #57094a0d;
+      font-size: 30vw;
+      z-index  : -10;
+
+      @media only screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    .header-contents {
+      z-index   : 1;
+      height    : 100%;
+      margin-top: 22%;
+
+      @media only screen and (max-width: 1000px) {
+        margin-top: 50%;
+      }
+
+      .socials {
+        font-size: 2rem;
+
+        a {
+          font-size : 2rem;
+          margin    : 0 30px;
+          transition: ease-in-out .2s color;
+
+          &:visited,
+          &:active,
+          &:link {
+            text-decoration: none;
+            color          : $complimentary-theme;
+          }
+
+          &:hover {
+            color: $main-theme-grey;
+          }
+        }
+
+        z-index: 15;
+      }
+    }
+
+    h1 {
+      font-size : 4.5rem;
+      text-align: center;
+
+    }
+
+    h3 {
+      color     : $main-theme;
+      text-align: center;
+    }
+  }
+
+  &#skills-section {
+    color     : white;
+    min-height: fit-content;
+
+    &.skills-desktop {
+      @media only screen and (max-width: 1000px) {
+        display: none;
+      }
+    }
+
+    &.skills-mobile {
+      @media only screen and (min-width: 1000px) {
+        display: none;
+      }
+    }
+
+    .card {
+
+      &-title {
+        color: $complimentary-theme;
+      }
+
+      h5 {
+        color: $main-theme;
+      }
+
+      color     : black;
+      box-shadow: 0 0 10px $main-theme-darker;
+    }
+
+    .tech-list p {
+      &:first-child {
+        text-align: end;
+      }
+
+    }
+  }
+
+  &#projects-section {
+    .project-wrapper {
+      img {
+        height: 300px;
+        max-width: 100%;
+      }
+    }
+
+    #pro {
+      .project-wrapper {
+        &:nth-child(odd) {}
+
+        &:nth-child(even) {
+          text-align: end;
+        }
+      }
+    }
+
+    #personal {
+      .project-wrapper {
+        &:nth-child(odd) {
+          text-align: end;
+        }
+
+        &:nth-child(even) {}
+      }
+    }
+
+    .project-wrapper {
+      min-height   : 300px;
+      margin-bottom: 20px;
+
+      h3 {
+        color: $complimentary-theme;
+      }
+    }
+  }
+}
+
+.footer {
+  min-height      : 250px;
+  background-color: $main-theme-grey;
+
+  footer {
+    color: whitesmoke;
+    button {
+      width: 100%;
+    }
+    input, textarea {
+      &:focus {
+        background-color: $complimentary-theme2;
+        color: white;
+        caret-color: white;
+      }
+      margin: 5px 0;
+      padding: 5px;
+      background-color: $complimentary-theme2;
+      color: white;
+      font-family: Exo;
+      width: 100%;
+      border: 0;
+      resize: none;
+      caret-color: white;
+    }
+    a {
+      font-size : 2rem;
+      margin    : 0 30px;
+      transition: ease-in-out .2s color;
+
+      &:visited,
+      &:active,
+      &:link {
+        text-decoration: none;
+        color          : $complimentary-theme;
+      }
+
+      &:hover {
+        color: rgb(196, 196, 196);
+      }
+    }
+
+    p {
+      color: rgba(245, 245, 245, 0.274);
+    }
+  }
+}
